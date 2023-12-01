@@ -6,7 +6,13 @@
   C'est la porte ouverte à une infinité d'animations et d'interactions possibles.
 */
 
+const box = document.querySelector(".box")
 
+box.addEventListener("click", toggleAnimation)
+
+function toggleAnimation(e) {
+  e.target.classList.toggle("active")
+}
 
 /*
   L'API "classList" est disponible sur tous les éléments du DOM.
@@ -17,6 +23,6 @@
   - remove(classe)
   - toggle(classe) // classe supprimée si présente, rajoutée si absente
   - replace(classeÀRemplacer, classeÀRajouter)
-
+  -contains(class)
   On peut aussi changer une classe en utilisant la propriété .className des éléments du DOM.
 */

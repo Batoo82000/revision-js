@@ -22,6 +22,14 @@
     Il provoque un rafraîchissement de la page car il essaye d'envoyer les données sur la même page si on ne spécifie aucun attribut à l'élément form.
 */
 
+const form = document.querySelector("form")
+
+// form.addEventListener("submit", handleSubmit)
+
+// function handleSubmit(e) {
+//     e.preventDefault()
+//     console.log("get submitted !");
+// }
 
 /* 
     2. input
@@ -30,19 +38,31 @@
 
     Pratique pour faire de la validation de données côté Front. (animation, UX, etc...)
 */
- 
 
+// const nameInput = document.querySelector("#name")
+// const checkbox = document.querySelector("#checkbox")
+// nameInput.addEventListener("input", handleInput)
+// checkbox.addEventListener("input", handleInput)
 
-/* 
+// function handleInput(e) {
+    //     console.log(e)
+    //     console.log(e.data)
+    //     console.log(e.target)
+    //     console.log(e.target.value)
+    // }
+    
+    
+    /* 
     3. change
-
+    
     Cet évènement ressemble à input mais ne se déclenche que lorsque un input perd le focus.
-
+    
     Pour les inputs checkbox ou radio, l'effet est identique.
-*/
-
-
-
+    */
+   
+//    const nameInput = document.querySelector("#name")
+   
+//    nameInput.addEventListener("change", () => console.log("lost focus"))
 
 /* 
     4. invalid
@@ -52,10 +72,18 @@
     Par exemple si je rentre un texte au mauvais format dans un input type="email".
 */
 
+// const emailInput = document.querySelector("#email")
+
+// emailInput.addEventListener("invalid", handleValid)
+
+// function handleValid(e) {
+//     console.log("mail invalide");
+// }
 
 
-    // Pour changer l'erreur dans la boxe au submit, on utilise setCustomValidity("Votre message")
+// Pour changer l'erreur dans la boxe au submit, on utilise setCustomValidity("Votre message")
 
+// emailInput.setCustomValidity("message custom pour le champs email")
 
 /* 
     Pour enlever complètement le message d'erreur, appelez cette fonction avec une chaîne vide.
@@ -71,3 +99,8 @@
 
     L'évènement blur est déclenché lorsqu'un élément perd le focus, comme lorsqu'on clique ailleurs.
 */
+
+// const nameInput = document.querySelector("#name")
+
+// nameInput.addEventListener("focus", ()=> console.log("Focus !"))
+// nameInput.addEventListener("blur", ()=> console.log("Lost focus !"))

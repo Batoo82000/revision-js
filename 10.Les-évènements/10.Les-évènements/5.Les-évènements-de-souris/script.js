@@ -25,11 +25,17 @@ const box = document.querySelector(".box")
 
 // box.addEventListener("mousemove", ()=> console.log("mouse move")) 
 // réagit au mouvement de la souris
+
 // box.addEventListener("mouseenter", ()=> console.log("mouse enter"))
 // réagit au moment ou la souris pénètre dans l'élément écouté.
+
 // box.addEventListener("mouseleave", ()=> console.log("mouse leave"))
 // réagit au moment ou la souris sort de l'élément écouté.
+
 // box.addEventListener("mouseover", ()=> console.log("mouse over"))
 // réagit au moment ou la souris passe sur l'élément ou un de ses enfant
-box.addEventListener("mouseout", ()=> console.log("mouse out"))
+
+// box.addEventListener("mouseout", ()=> console.log("mouse out"))
 // réagit au moment ou la souris de l'élément ou un de ses enfant
+
+document.addEventListener("wheel", () => console.log("molette"));
